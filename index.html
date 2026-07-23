@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Tanzeel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="loader-ring"></div>
+  <div class="loader-text">Loading your surprise<span class="dots"><span>.</span><span>.</span><span>.</span></span></div>
+</div>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="heart-field" id="heartField"></div>
+<div class="progress" id="progress"></div>
+
+<!-- 1-2-3 counting overlay -->
+<div class="count-overlay" id="countOverlay">
+  <div class="count-num" id="countNum">1</div>
+</div>
+
+<!-- 1. PASSCODE -->
+<section class="screen active" id="screen-passcode">
+  <div class="card">
+    <div class="eyebrow">A little celebration</div>
+    <h1 class="display">Enter the code</h1>
+    <p class="lead">You already know this one.</p>
+    <div class="passcode-dots" id="dots"></div>
+    <div class="keypad" id="keypad"></div>
+  </div>
+</section>
+
+<!-- 2. CAKE -->
+<section class="screen" id="screen-cake">
+  <div class="card cake-stage">
+    <div class="eyebrow">Make a wish</div>
+    <h2 class="display">Light every candle</h2>
+    <p class="lead">Happy birthday, Tanzeel.</p>
+
+    <div class="candles" id="candles">
+      <button class="candle"><span class="flame"></span><span class="stick"></span></button>
+      <button class="candle"><span class="flame"></span><span class="stick"></span></button>
+      <button class="candle"><span class="flame"></span><span class="stick"></span></button>
+      <button class="candle"><span class="flame"></span><span class="stick"></span></button>
+    </div>
+
+    <div class="cake-scene" id="cakeScene">
+      <span class="knife" id="knife">🔪</span>
+      <span class="slice-flash" id="sliceFlash"></span>
+      <div class="tier tier-top">
+        <div class="sprinkles">
+          <span class="sp1"></span><span class="sp2"></span><span class="sp3"></span><span class="sp4"></span><span class="sp5"></span>
+        </div>
+        <div class="drip-row">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="tier tier-bottom"></div>
+    </div>
+    <div class="plate"></div>
+
+    <div class="cake-tap-hint" id="cakeTapHint">Tap each candle to light it</div>
+    <button class="btn btn-primary" id="toMemories" hidden>One last thing</button>
+  </div>
+</section>
+
+<!-- INTRO MESSAGE -->
+<section class="screen" id="screen-intro">
+  <div class="card">
+    <div class="eyebrow">A little celebration</div>
+    <h2 class="display">Happy birthday, Tanzeel! 🎂</h2>
+    <p class="lead">I made something small for you. Ready to see it?</p>
+    <button class="btn btn-primary btn-next">Yes, show me</button>
+  </div>
+</section>
+
+<!-- PHOTO 1 -->
+<section class="screen" id="screen-photo1">
+  <div class="card">
+    <div class="eyebrow">A moment</div>
+    <img class="reveal-photo" src="memory-photo1.jpg" alt="Us under the tree">
+    <p class="lead" style="margin-top:1.1rem">Remember this one?</p>
+    <button class="btn btn-primary btn-next">Next</button>
+  </div>
+</section>
+
+<!-- MESSAGE 1 -->
+<section class="screen" id="screen-msg1">
+  <div class="card">
+    <div class="eyebrow">😂</div>
+    <h2 class="display">The bunked classes</h2>
+    <p class="lead">Sneaking out of school to spend the whole day at the park — worth every bit of trouble it got us into.</p>
+    <button class="btn btn-primary btn-next">Next</button>
+  </div>
+</section>
+
+<!-- PHOTO 2 -->
+<section class="screen" id="screen-photo2">
+  <div class="card">
+    <div class="eyebrow">A moment</div>
+    <img class="reveal-photo" src="memory-photo2.jpg" alt="Us on the bike">
+    <p class="lead" style="margin-top:1.1rem">Still riding around together.</p>
+    <button class="btn btn-primary btn-next">Next</button>
+  </div>
+</section>
+
+<!-- MESSAGE 2 -->
+<section class="screen" id="screen-msg2">
+  <div class="card">
+    <div class="eyebrow">🥺</div>
+    <h2 class="display">The late nights</h2>
+    <p class="lead">Staying up with you through the nights you needed someone there — no questions asked.</p>
+    <button class="btn btn-primary btn-next">Next</button>
+  </div>
+</section>
+
+<!-- PHOTO 3 -->
+<section class="screen" id="screen-photo3">
+  <div class="card">
+    <div class="eyebrow">A moment</div>
+    <img class="reveal-photo" src="memory-photo3.jpg" alt="Being goofy on a call">
+    <p class="lead" style="margin-top:1.1rem">Being goofy, as always.</p>
+    <button class="btn btn-primary btn-next">Next</button>
+  </div>
+</section>
+
+<!-- VIDEO 1 -->
+<section class="screen" id="screen-video1">
+  <div class="card">
+    <div class="eyebrow">On video</div>
+    <video class="reveal-video" controls src="memory1.mp4"></video>
+    <button class="btn btn-primary btn-next" style="margin-top:1.2rem">Next</button>
+  </div>
+</section>
+
+<!-- VIDEO 2 -->
+<section class="screen" id="screen-video2">
+  <div class="card">
+    <div class="eyebrow">On video</div>
+    <video class="reveal-video" controls src="memory2.mp4"></video>
+    <button class="btn btn-primary btn-next" style="margin-top:1.2rem">One more thing</button>
+  </div>
+</section>
+
+<!-- 4. MESSAGE -->
+<section class="screen" id="screen-message">
+  <div class="card letter-body">
+    <div class="eyebrow" style="text-align:center">One last thing</div>
+    <h2 class="display" style="text-align:center">My message to you</h2>
+    <p>Happy birthday, Tanzeel. There isn't really a way to sum up how much you mean to me, but I'm going to try anyway.</p>
+    <p>Remember bunking school and spending the whole day at the park? We fought about the smallest things back then, and somehow we're still here, still friends, still us.</p>
+    <p>Remember the nights you cried and I stayed up with you till morning, just so you wouldn't be alone with it? And every single class we sat through together, getting scolded more times than either of us wants to admit — those are some of my favorite memories, honestly.</p>
+    <p>I hope this year brings you everything you've been working for, and a few things you didn't even know you wanted.</p>
+    <div class="sign">— your best friend</div>
+    <div style="text-align:center; margin-top:1.2rem">
+      <button class="btn btn-primary" id="toFinal">Continue</button>
+    </div>
+  </div>
+</section>
+
+<!-- 5. FINAL -->
+<section class="screen" id="screen-final">
+  <div class="card">
+    <div class="final-hearts">🎂💗</div>
+    <h2 class="display">Here's to you, <em>Tanzeel</em>.</h2>
+    <p class="lead">Thank you for every bunked class, every fight that never lasted, every night you let me stay, and every laugh in between. Here's to many more years of exactly this.</p>
+    <p class="sign" style="text-align:center">Happy birthday. Always in your corner.</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
